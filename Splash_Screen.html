@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduQuest</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('SplashScreen.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .splash-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        ul, li {
+            margin-bottom: 8px;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container">
+        <form>
+        <h1>EduQuest</h1>
+        <p>Our mission is to enable educators with tools and resources to inspire student success.</p>
+        <h2>Team Colleagues</h2>
+        <ul>
+            <li>Ashalya Paranagama</li>
+            <li>Ravindhu Kaluarachchi</li>
+            <li>Mohamed Shazni</li>
+            <li>Rusitha Fernando </li>
+        </ul>
+        <div class="loader"></div>
+        </form>
+    </div>
+    <script>
+        setTimeout(function(){
+            window.location.href = "home.html";
+        }, 4000);
+    </script>
+</body>
+</html>
