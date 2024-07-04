@@ -9,19 +9,16 @@ body {
         padding: 0;
         position: fixed;
         width: 100%;
-        background-color: #bb1c23
-
-        ;
+        background-color: #bb1c23;
         border: #ddd;
         z-index: 1;
     }
-    
+
     .topnav nav {
         display: flex; /* Use flex layout */
         width: 100%; /* Make the nav take the full width */
         justify-content: space-between; /* Distribute items evenly */
     }
-    
     /* Style the links inside the navigation bar */
     .topnav a {
         flex-grow: 1;
@@ -55,4 +52,3 @@ body {
         width: calc(100%);
         min-height: calc(100vh - 46px);
     }
-    
