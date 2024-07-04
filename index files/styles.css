@@ -5,7 +5,6 @@ body {
     
     .topnav {
         display: flex; /* Use flex layout */
-        justify-content: center; /* Center the nav */
         overflow: hidden;
         padding: 0;
         position: fixed;
