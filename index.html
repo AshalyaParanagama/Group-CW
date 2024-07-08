@@ -5,12 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" contents = "IE=edge">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Navigation bar integration script starts here. Please enter this script in the head section to make it appear on your webpage-->
         <link rel="stylesheet" href="index files/styles.css">
         <link id = "navigationBar" rel="import" href="topbar.html">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
         </style>
-        <script> // Navigation bar integration script starts here. Please enter this script in the head section to make it appear on your webpage
+        <script> 
             document.addEventListener("DOMContentLoaded", function() {
                 fetch('topbar.html')
                     .then(response => response.text())
@@ -22,7 +24,7 @@
         </script> <!--Navigation bar integration script ends here-->
     </head>
     <body>
-        <div class ="topbar"> <!--Navigation Bar starts here. Please enter this topbar class in your body to make it appear in your webpage-->
+        <div class ="topbar"> 
             <div class="topnav">
               </div>
         </div><!--Navigation bar ends here-->
