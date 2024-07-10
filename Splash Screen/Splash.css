@@ -104,3 +104,19 @@ ul, li {
     align-items: center;
     width: 100%;
 }
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(189, 166, 166);
+}
+
+a:active{
+    color: rgb(186, 93, 93);
+}
+
+a:visited{
+    color: rgb(223, 91, 91);
+}
