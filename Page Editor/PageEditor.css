@@ -36,12 +36,13 @@ body {
     margin-top: 0;
     color: #d32f2f;
 }
-a {
+footer a {
     color: #cf5454;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+footer a:hover {
+    text-decoration: none;
+    color:rgb(226, 213, 195);
 }
 .footer {
     text-align: center;
