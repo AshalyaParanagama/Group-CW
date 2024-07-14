@@ -36,13 +36,13 @@ body {
     margin-top: 0;
     color: #d32f2f;
 }
-footer a {
+ a {
     color: #cf5454;
     text-decoration: none;
 }
-footer a:hover {
+a:hover {
     text-decoration: none;
-    color:rgb(226, 213, 195);
+    color:rgb(201, 141, 141);
 }
 .footer {
     text-align: center;
