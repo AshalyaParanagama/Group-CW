@@ -10,7 +10,7 @@
     </style>
     <script>
             document.addEventListener("DOMContentLoaded", function() {
-                fetch('topbar.html')
+                fetch('/Shop/topbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.querySelector('.topnav').innerHTML = data;
