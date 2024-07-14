@@ -9,9 +9,12 @@ body {
         padding: 0;
         position: fixed;
         width: 100%;
-        background-color: #bb1c23;
+        background-color: #bb1c23
+
+        ;
+        top: 0;
         border: #ddd;
-        z-index: 1;
+        z-index: 10;
     }
 
     .topnav nav {
@@ -47,8 +50,122 @@ body {
     
     /* CSS for main class */
     .main1 {
-        position: absolute;
-        top: 46px;
+        position: relative;
         width: calc(100%);
-        min-height: calc(100vh - 46px);
+        min-height: calc(100vh);
+    }  
+    
+    .logo {
+
+        height: calc(100vh);
+        width: 30%;
+        min-width: 30%;
+        min-height: 100%;
+        max-height: 100%;
+        position: relative;
+        float: left;
     }
+
+    .logo img{
+
+        margin: 0%;
+        width:calc(100%);
+        height:calc(100vh);
+        z-index: 1;
+    }
+
+    .intro{
+        height: calc(100vh);
+        width: 70%;
+        position: relative;
+        float: right;
+    }
+
+    .intro img{
+
+        margin: 0%;
+        width:calc(100%);
+        height:calc(100vh);
+        z-index: 0;
+        position:absolute;
+    }
+
+    .intro-text{
+        font-family: "Anton SC", sans-serif;
+        color: #000000;
+        float: left;
+        z-index: 1;
+        width: calc(20%);
+        background: none;
+        position: absolute;
+        padding-left: 20px;
+    }
+
+    
+    .main2 {
+        background-color: #000000;
+        position: relative;
+        width: calc(100%);
+        max-height: calc(100vh);
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+    }  
+
+    .main2 p{
+        font-family: "Anton SC", sans-serif;
+        color: #f2f2f2;
+        float: left;
+        z-index: 1;
+        max-width: 70%;
+    }
+
+    .main2 img{
+
+        margin: 0%;
+        width:calc(100%);
+        height:calc(100vh);
+        z-index: 0;
+        position:relative;
+    }
+
+    .mission{
+        font-family: "Anton SC", sans-serif;
+        color: #000000;
+        float: left;
+        z-index: 1;
+        width: calc(100%);
+        background: none;
+        position: absolute;
+        
+    }
+
+    footer a { 
+        color: #f8f8f8;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: none;
+        color:#aa9898;
+    }
+    footer a:active{
+        color:#ad8888
+    }
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #d32f2f;
+        color: #fff;
+        position: relative;
+        max-width: 100%;
+        max-height: 15%;
+        bottom: 0;
+        left: 0;
+        z-index:2;
+    }
+
+    .footer p{
+
+        font-family: "Anton SC", sans-serif;
+    }
+
