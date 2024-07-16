@@ -1,0 +1,128 @@
+
+:root{
+    --bgColor: #bb1c23;
+    --borders: white;
+    --font: Verdana, sans-serif;
+    
+}
+body{
+  /* font-family: var(--font); */
+  font-family: var(--font);
+  background-color: var(--bgColor);
+  
+}
+@font-face {
+  font-family: "dyslexiFont";
+  src: url(typeface/ComicSans/LDFComicSans.ttf);
+}
+
+/* Verdana, default font for website */
+@font-face {
+  font-family: "verdana";
+  src: url(typeface/Verdana/verdana.ttf);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  .gallery-item {
+    /* border: var(--borders) 5px solid;  */
+    /* border-radius: 20px; */
+    overflow: hidden;
+    transform: scale(1.0);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 10rem;
+    max-height: fit-content;
+    display: flex;
+    border: black 15px solid;
+    border-radius: 30px;
+    transition: 0.2s;
+  }
+  .gallery-item :hover{
+    border: var(--borders) 15px solid; 
+    border-radius: 30px;
+    transition: 0.25s;
+    cursor: pointer;
+    transform: scale(1.025);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+  .modal.changeCol{
+    background-color: var(--borders);
+  }
+  .modal-content {
+    margin: auto;
+    display: flex;
+    max-width: 80%;
+    max-height: 80%;
+
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
+    border-radius: 5px; 
+
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.1s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .colorContainer{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 5em;
+
+  }
+  .fontContainer{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 2em;
+
+  }
+  .colorRect{
+    width: 8rem;
+    height: 5rem;
+    background-color: aqua;
+    border-radius: 5px;
+  }
+  /* Animations */
+  @keyframes zoomIn {
+    0%{
+        opacity: 0%;
+        max-width: 60%;
+        max-height: 60%;
+    }
+    100%{
+        opacity: 100%;
+        max-width: 80%;
+        max-height: 80%;
+
+    }
+  }
+  
