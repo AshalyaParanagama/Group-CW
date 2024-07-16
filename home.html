@@ -19,10 +19,70 @@
                         document.querySelector('.topnav').innerHTML = data;
                     })
                     .catch(error => console.error('Error fetching the topbar:', error));
-            });
-        </script> <!--Navigation bar integration script ends here-->
-        <!--To include the navigation bar, please put the code from the previous mentioned start point to here in the head section-->
+        //Navigation bar integration script ends here-->
+        //To include the navigation bar, please put the code from the previous mentioned start point to here in the head section
+                function animateNumber(elementId, start, end, duration) {
+                    let range = end - start;
+                    let current = start;
+                    let increment = end > start ? 1000000 : -1000000;
+                    let stepTime = Math.abs(Math.floor(duration / range));
+                    let obj = document.getElementById(elementId);
+                    console.log('Animating number for element:', obj);
+                    if (!obj) {
+                        console.error('Element not found:', elementId);
+                        return;
+                    }
+                    let timer = setInterval(() => {
+                        current += increment;
+                        obj.textContent = current.toLocaleString(); // Format the number with commas
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, stepTime);
+                };
 
+                // Intersection Observer to trigger animation when in view by the user
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+
+                const observerCallback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            if (entry.target.id === 'war-affected') {
+
+                                animateNumber('war-affected', 0, 468000000, 5000);
+                            } 
+
+                            else if (entry.target.id === 'out-of-school') {
+
+                                animateNumber('out-of-school', 0, 250000000, 5000);
+                            }
+
+                            else if(entry.target.id === 'poverty'){
+
+                                animateNumber('poverty', 0, 385000000, 5000);
+                            }
+
+                            else if(entry.target.id === 'malnutrition'){
+
+                                animateNumber('malnutrition', 0, 390000000, 5000);
+                            }
+                            observer.unobserve(entry.target); // Stop observing after animation
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(observerCallback, observerOptions);
+                observer.observe(document.getElementById('war-affected'));
+                observer.observe(document.getElementById('out-of-school'));
+                observer.observe(document.getElementById('poverty'));
+                observer.observe(document.getElementById('malnutrition'));
+            });
+
+        </script>    
     </head>
     <body>
         <div class ="topbar"> <!--Navigation Bar starts here. Please enter this topbar class in your body to make it appear in your webpage-->
@@ -48,10 +108,25 @@
                 <p style="text-align: center; font-size: 90px;">"Our mission is to enable educators with tools and resources to inspire student success"</p>
             </div>
         </div>
+        <div class = "main3">
+            <img src = "index files/img/World-conflicts.jpg" url ="https://acleddata.com/conflict-index/#map" width = "50%">
+            <div class = "war-summary">
+                <h1>As of 2024, </h1>
+                <br>
+                <p><font color = "#bb1c23" size = "25px"><span id = "war-affected">468,000,000</span></font> children have been affected by war</p>
+                <p><font color = "#bb1c23" size = "25px"><span id = "out-of-school">250,000,000</span></font> children are out-of-school</p>
+                <p><font color = "#bb1c23" size = "25px"><span id = "poverty">385,000,000</span></font> children are affected by extreme poverty</p>
+                <p><font color = "#bb1c23" size = "25px"><span id = "malnutrition">390,000,000</span></font> children are affected by malnutrition</p>
+            </div>
+            <div class="back-to-top" id="bottom">
+                <h4><a href="#" class="top"> ↑ Back to Top </a></h4>
+            </div>
+        </div>
         <div class = "footer">
             <div class = "page-editor">
                 <p>This page is created by <a href = "student2-page-editor.html"> Buwaneka Ravindhu Kaluarachchi</a></p>
             </div>
         </div>
+
     </body>
 </html>
