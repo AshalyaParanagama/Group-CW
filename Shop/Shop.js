@@ -65,7 +65,7 @@ function clearBasket() {
             alert('Please fill out your name and email to proceed with the checkout.');
         } else {
             // Proceed to payment method page
-            window.location.href = "/Shop/paymentmethod.html";
+            window.location.href = "/Shop/paymentMethod.html";
         }
     });
 
