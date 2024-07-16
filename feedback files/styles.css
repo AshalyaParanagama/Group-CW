@@ -80,6 +80,17 @@ h2 {
     background-color: #45a049;
 }
 
+#confirmation {
+
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+strong{
+
+    font-weight: lighter;
+}
+
 footer a {
     color: #f8f8f8;
     text-decoration: none;
