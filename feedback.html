@@ -25,24 +25,24 @@
         //To include the navigation bar, please put the code from the previous mentioned start point to here in the head section
 
             function handleSubmit(event) {
-            event.preventDefault(); // Prevent form submission
+                event.preventDefault(); //To prevent form submission
 
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const rating = document.getElementById('rating').value;
-            const comments = document.getElementById('comments').value;
+                //To get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const rating = document.getElementById('rating').value;
+                const comments = document.getElementById('comments').value;
 
-            // Display the confirmation message
-            document.getElementById('feedback-form').style.display = 'none';
-            document.getElementById('confirmation').style.display = 'block';
+                //Display the confirmation message
+                document.getElementById('feedback-form').style.display = 'none';
+                document.getElementById('confirmation').style.display = 'block';
 
-            // Set the confirmation message content
-            document.getElementById('confirm-name').textContent = name;
-            document.getElementById('confirm-email').textContent = email;
-            document.getElementById('confirm-rating').textContent = rating;
-            document.getElementById('confirm-comments').textContent = comments;
-        }
+                //Set the confirmation message content
+                document.getElementById('confirm-name').textContent = name;
+                document.getElementById('confirm-email').textContent = email;
+                document.getElementById('confirm-rating').textContent = rating;
+                document.getElementById('confirm-comments').textContent = comments;
+            }
         </script>
     </head>
     <body>
@@ -56,10 +56,10 @@
                 <div id="feedback-form">
                     <form class="feedback-form" onsubmit="handleSubmit(event)">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Please enter only letters" placeholder="Please enter your name" required>
     
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
     
                         <label for="rating">Rating</label>
                         <select id="rating" name="rating" required>

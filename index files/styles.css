@@ -114,7 +114,7 @@ body {
 
     .main2 p{
         font-family: "Anton SC", sans-serif;
-        color: #f2f2f2;
+        color: #E1D9D1;
         float: left;
         z-index: 1;
         max-width: 70%;
@@ -127,6 +127,7 @@ body {
         height:calc(100vh);
         z-index: 0;
         position:relative;
+        filter: sepia(1) saturate(10) hue-rotate(-0deg);
     }
 
     .mission{
@@ -153,6 +154,8 @@ body {
     .war-summary strong{
 
         font-weight: lighter;
+        font-size: 48px;
+        color:#bb1c23;
     }
 
     .war-summary p{
