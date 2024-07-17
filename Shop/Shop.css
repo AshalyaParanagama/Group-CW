@@ -226,3 +226,12 @@ footer a:active{
     bottom: 0;
     left: 0;
 }
+.removing {
+    background-color: #ab3535;
+    color:#fff;
+    border-radius: 5px;
+    border: none;
+}
+.removing:hover{
+    background-color: #af4a4a;
+}
