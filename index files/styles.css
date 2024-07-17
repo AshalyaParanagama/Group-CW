@@ -154,6 +154,8 @@ body {
     .war-summary strong{
 
         font-weight: lighter;
+        font-size: 48px;
+        color:#bb1c23;
     }
 
     .war-summary p{
