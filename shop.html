@@ -17,6 +17,16 @@
                 })
                 .catch(error => console.error('Error fetching the topbar:', error));
             });
+            const sharp = require('sharp');
+
+            sharp('index%20files/img/background.png')
+                .toFile('index%20files/img/background.webp', (err, info) => {
+                    if (err) {
+                        console.error(err);
+                    } else {
+                        console.log(info);
+                    }
+            });
     </script>
 </head>
 <body>
