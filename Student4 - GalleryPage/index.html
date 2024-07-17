@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../index files/styles.css">
+    <script src="main.js"></script>
+    <title>Image Gallery</title>
+</head>
+<body id="body">
+  <!-- Heading Name -->
+  <div class ="topbar">    
+    <div class="topnav">
+        <nav> <!--Navigation Bar -->
+            <a href="home.html">HOME </a>
+            <a href="#SiteMap">SITE MAP</a>
+            <a href="#Gallery">GALLERY</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="#AboutUs">ABOUT US</a>
+            <a href="#UserProfile">USER</a>
+            <a href="feedback.html">FEEDBACK</a>
+        </nav>
+      </div>
+</div>
+  <div class="heading">
+    <h1 style="display: flex; justify-content: center;">Image Gallery</h1>
+  </div>
+
+
+    <!-- Image Gallery section all image in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="imgs/Free primary and secondary education.jpg" onclick="expandImg('imgs/Free primary and secondary education.jpg', 'h-free', 'p-free')" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/Equal access to pre-primary education.jpg" onclick="expandImg('imgs/Equal access to pre-primary education.jpg', 'h-equal', 'p-equal')" alt="Image 1">
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/Affordable Technical and Higher education.jpg" onclick="expandImg('imgs/Affordable Technical and Higher education.jpg', 'h-affordable', 'p-affordable')" alt="Image 1">
+    </div>
+
+    <div class="gallery-item">
+      <img src="imgs/Skills for financial success.png" onclick="expandImg('imgs/Skills for financial success.png', 'h-skills', 'p-skills')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Eliminating Discriminations.jpg" onclick="expandImg('imgs/Eliminating Discriminations.jpg', 'h-eliminating', 'p-eliminating')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/University literacy and numeracy.jpg" onclick="expandImg('imgs/University literacy and numeracy.jpg', 'h-university', 'p-university')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Education for Sustainable Development and Global citizenship.png" onclick="expandImg('imgs/Education for Sustainable Development and Global citizenship.png', 'h-education', 'p-education')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Inclusive and safe education.png" onclick="expandImg('imgs/Inclusive and safe education.png', 'h-inclusive', 'p-inclusive')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Equality and inclusion.jpg" onclick="expandImg('imgs/Equality and inclusion.jpg', 'h-equality_inclusion', 'p-equality_inclusion')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Curriculum relevance.jpg" onclick="expandImg('imgs/Curriculum relevance.jpg', 'h-curriculum', 'p-curriculum')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Assessment for learning.jpg" onclick="expandImg('imgs/Assessment for learning.jpg', 'h-assessment', 'p-assessment')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Technology integration.jpg" onclick="expandImg('imgs/Technology integration.jpg', 'h-technology', 'p-technology')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Global citizenship education.jpg" onclick="expandImg('imgs/Global citizenship education.jpg', 'h-global', 'p-global')" alt="Image 1">
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/Quality assurance and monitoring.jpg" onclick="expandImg('imgs/Quality assurance and monitoring.jpg', 'h-quality', 'p-quality')" alt="Image 1">
+  </div>
+</div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeImg()">&times;</span>
+
+    <div class="colorContainer modal-content">
+      <h2 style="color: white; padding-right: 50px; justify-content: left;">Change Website Color</h2>
+      <div>
+        <button type="button" role="button" class="colorRect" onclick="changeColor('rgb(0, 166, 255)')" style="background-color: rgb(0, 166, 255);"><h2>Blue</h2></button>
+      </div>
+
+      <div>
+        <button type="button" role="button" class="colorRect" onclick="changeColor('#bb1c23')" style="background-color: #bb1c23;"><h2>Default</h2></button>
+      </div>
+      <div>
+        <button type="button" role="button" class="colorRect" onclick="changeColor('green')" style="background-color: green;"><h2>Green</h2></button>
+      </div>
+
+      <div>
+      </div>
+
+  </div>
+
+  <div class="fontContainer modal-content">
+    <h2 style="color: white; padding-right: 50px; justify-content: left;">Change Website font</h2>
+    <div>
+      <button id="default" type="button" role="button" class="colorRect" style="background-color: blue;" onclick="setFont('1')"><h2>Verdana</h2></button>
+    </div>
+
+    <div>
+      <button id="cS" type="button" role="button" class="colorRect" style="background-color: #f19f9f;" onclick="setFont('2')"><h2>Comic Sans</h2></button>
+    </div>
+    
+    <div>
+    </div>
+
+</div>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-free">Free primary and secondary education</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-free"> 
+      Free primary and secondary education is fundamental in ensuring that every child, 
+      regardless of their socio-economic background, 
+      has the opportunity to access foundational education. 
+      By eliminating financial barriers, governments and institutions enable all children to develop essential literacy, 
+      numeracy, and critical thinking skills. 
+      This equitable access not only empowers individuals but also strengthens communities and economies by providing a level playing field for all.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-equal">Equal access to pre-primary education!</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-equal"> 
+      Equal access to pre-primary education is crucial for setting a strong educational foundation from an early age. 
+      Early childhood education programs provide essential cognitive, social, 
+      and emotional development opportunities that prepare children for formal schooling. 
+      By ensuring that all children have access to quality pre-primary education, 
+      societies invest in the future readiness of their youth, promoting lifelong learning and success.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-affordable">Affordable Technical and Higher education</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-affordable"> 
+      Affordable technical and higher education plays a pivotal role in fostering specialized skills and knowledge essential for economic growth and innovation. 
+      By making technical and higher education accessible to a broader population, 
+      individuals can pursue careers in various fields such as technology, healthcare, and engineering. 
+      This affordability not only enhances individual opportunities but also contributes to societal advancement and competitiveness in the global economy.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-skills">Skills for financial success</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-skills"> 
+      Equipping students with skills for financial success is crucial in preparing them to navigate personal finances, 
+      make informed decisions, and achieve economic stability. 
+      Financial literacy education teaches essential concepts like budgeting, saving, investing, and managing debt. 
+      By empowering individuals with these skills, 
+      education ensures that they can thrive economically and contribute positively to their communities.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-eliminating">Eliminating Discriminations</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-eliminating"> 
+      Eliminating discrimination in education is essential for creating inclusive and equitable learning environments. 
+      By addressing biases based on race, gender, ethnicity, religion, or disability, 
+      educational institutions promote a culture of respect and diversity. 
+      This inclusive approach not only enhances educational outcomes but also prepares students to thrive in a multicultural society, 
+      fostering empathy and understanding among future leaders and citizens.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-university">University literacy and numeracy</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-university"> 
+      University literacy and numeracy skills are foundational for academic success and lifelong learning. 
+      These skills encompass the ability to comprehend complex texts, 
+      critically analyze information, and apply mathematical concepts effectively. 
+      By developing strong literacy and numeracy skills at the university level, 
+      students are equipped to engage critically with disciplinary knowledge, 
+      contribute meaningfully to research, and adapt to evolving academic and professional demands.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-education">Education for Sustainable Development and Global citizenship</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-education"> 
+      Education for sustainable development and global citizenship prepares students to understand and address global challenges such as climate change, poverty, 
+      and social injustice. By integrating environmental, social, and economic dimensions into the curriculum, 
+      education fosters responsible citizenship and encourages sustainable practices. 
+      This holistic approach equips students with the knowledge, skills, 
+      and values needed to contribute positively to local and global communities, promoting a more equitable and sustainable future.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-inclusive">Inclusive and safe education</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-inclusive"> 
+      Inclusive and safe education environments are essential for promoting learning and well-being among all students. 
+      By fostering a culture of respect, tolerance, and acceptance, schools create spaces where diversity is celebrated, 
+      and every student feels valued and supported. 
+      This inclusive approach not only enhances academic achievement but also nurtures social-emotional development 
+      and prepares students to thrive in an interconnected world.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-equality_inclusion">Equality and Inclusion</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-equality_inclusion"> 
+      Equality and inclusion are foundational pillars of quality education, ensuring that every student, 
+      regardless of background, abilities, or circumstances, 
+      has equal access to educational opportunities. 
+      By fostering an inclusive environment free from discrimination and bias, 
+      schools promote respect, diversity, and a sense of belonging among students and staff. 
+      This pillar emphasizes equity in education, 
+      striving to close achievement gaps and empower all learners to reach their full potential.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-effective">Effective Teaching and Learning</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-effective"> 
+      Effective teaching and learning are essential for engaging students and promoting academic success. 
+      This pillar emphasizes the use of diverse teaching strategies that cater to different learning styles and abilities. 
+      Well-trained educators employ innovative techniques to make learning meaningful and relevant, 
+      fostering critical thinking, creativity, and problem-solving skills. 
+      By focusing on effective teaching practices, schools create dynamic classrooms where students are motivated to explore, 
+      discover, and excel.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-curriculum">Curriculum Relevance</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-curriculum"> 
+      Curriculum relevance ensures that educational content is meaningful, up-to-date, 
+      and aligned with real-world challenges and opportunities. 
+      This pillar emphasizes the importance of integrating contemporary knowledge, skills, 
+      and competencies into the curriculum. By offering relevant learning experiences, 
+      schools prepare students for future careers, lifelong learning, and active citizenship in a rapidly changing global society.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-assessment">Assessment for Learning</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-assessment"> 
+      Assessment for learning involves ongoing evaluation and feedback to monitor students' progress and inform instructional decisions. 
+      This pillar emphasizes the use of diverse assessment methods that measure understanding, skills development, 
+      and academic growth. By providing timely feedback and support, educators tailor instruction to meet individual learning needs, 
+      promoting continuous improvement and fostering a positive learning experience for all students.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-technology">Technology Integration</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-technology"> 
+      Technology integration enhances teaching and learning by leveraging digital tools, 
+      resources, and platforms to enhance engagement, collaboration, and learning outcomes. 
+      This pillar emphasizes the use of technology to facilitate personalized learning experiences, 
+      access to information, and skill development in digital literacy. By embracing technology, 
+      schools prepare students for success in a digital age, 
+      equipping them with essential 21st-century skills and enhancing educational opportunities beyond traditional boundaries.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-community">Community Engagement</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-community"> 
+      Community engagement promotes collaboration and partnership among schools, families, 
+      and the broader community to support student learning and well-being. 
+      This pillar emphasizes the importance of involving parents, caregivers, 
+      businesses, and community organizations in educational activities and decision-making processes. 
+      By fostering strong relationships and shared responsibility for education, 
+      schools create a supportive network that enhances student achievement, social-emotional development, and community cohesion.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-global">Global Citizenship Education</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-global"> 
+      Global citizenship education prepares students to understand and address global challenges, 
+      respect cultural diversity, and promote sustainable development. 
+      This pillar emphasizes the importance of fostering empathy, critical thinking, and intercultural competence among students. 
+      By integrating global perspectives into the curriculum, 
+      schools empower students to become responsible global citizens who contribute positively to local and global communities.
+    </p>
+
+    <h1 class="modal-content" style="color: white; display: none;" id="h-quality">Quality Assurance and Monitoring</h1>
+    <p class="modal-content" style="color: white; display: none;" id="p-quality"> 
+      Quality assurance and monitoring ensure that educational practices, policies, and outcomes meet high standards of excellence and effectiveness. 
+      This pillar emphasizes continuous evaluation, improvement, and accountability in education. By monitoring student performance, evaluating teaching practices, 
+      and assessing school effectiveness, educators and policymakers identify areas for enhancement and ensure equitable access to quality education for all students.
+    </p>
+
+    
+
+    
+
+    <img class="modal-content" id="modalImage">
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

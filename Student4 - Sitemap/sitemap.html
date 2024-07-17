@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{background-color: #bb1c23;
              background-image: url('web background.avif');
@@ -10,19 +12,51 @@
         .nodehome{align-items: right;}
         
         .tittle{
-            border-radius: 20px;
-            display:grid;
-            border: white 10px solid;
+            font-weight: bold;
+            stroke: white ;
+            stroke-width: 1 ;
         }
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 51.43%; /* Aspect ratio (height/width = 1080/1400 = 0.7714) */
+            vertical-align: middle;
+            overflow: hidden;
+        }
+
+        .svg-container svg {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* nav */
+        .sitemapnav {
+            background: #0c0c0c;  
+            padding: 15px ;
+            text-align: center;
+        }
+        .sitemapnav a {
+            color: white;
+            margin:  15px;
+            text-decoration:none;
+            font-weight: bold;
+        }
+        .sitemapnav a:hover {
+            text-decoration: none;
+        }
+        
     </style>
 </head>
 <body>
 <!-- <h1>My first SVG</h1> -->
-    <div  class = "sitemap">
-        <div class = "nodehome">
+    <div  class = "svg-container">
             
-                <svg width="1400" height="1080" xmlns="http://www.w3.org/2000/svg">
-                    <text x="60" y="80" font-size="65"  fill="Black" class="tittle">Sitemap</text>
+                <svg viewBox="0 0 1400 720" xmlns="http://www.w3.org/2000/svg">
+                <text x="60" y="60" font-size="65"  fill="Black" class="tittle">Sitemap</text>
                     <a href="index.html" target="_blank">
                         <rect width="150" height="50" x="600" y="90" rx="20" ry="20" style="fill:white;stroke:black;stroke-width:5;" />
                         <text x="645" y="125" font-size="25"  fill="Black">Home</text>
@@ -97,8 +131,13 @@
 
                 </svg>
             
-        </div>
     </div>
+
+    <nav class="sitemapnav">
+        <p><a href="#" class="Back"> ↑ Back to Top </a>  
+        <p><a href="Home.html" class="Back"> ↑ Back to Home page </a>
+            
+    </nav>
 
 </body>
 </html>
