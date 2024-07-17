@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Team </title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="Myteam.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="MyFooter.css">
+
+
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+  </style>
+  <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              fetch('topbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.querySelector('.topnav').innerHTML = data;
+              })
+              .catch(error => console.error('Error fetching the topbar:', error));
+          });
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="topbar"> <!-- Topbar section -->
+      <div class="topnav">
+      </div>
+  </div>
+  </header>
+
+  <section>
+    <div>
+      <h1> About Us </h1>
+    </div>
+
+    <div class="row">
+      <!-- Student 1-->
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="Ashalya.jpg" alt="ashalya">
+          </div>
+
+          <h3>Ashalya Paranagama</h3>
+          <p> UoW ID - W2083050 </p>
+          <p> IIT ID - 20230187 </p>
+          <p> Tasks - Created the Splash Screen, Shop & a Content Page </p>
+
+          <div class="icons">
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:ashalya.20230187@iit.ac.lk">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student 2-->
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="Ravindhu.jpg" alt="ravindhu">
+          </div>
+          <h3>Ravindhu Kaluarachi</h3>
+          <p> UoW ID - W2082256 </p>
+          <p> IIT ID - 20232577 </p>
+          <p> Tasks - Created the Home Page, Navigation Bar, Feedback Page & a Content page </p>
+          <div class="icons">
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:ravindhu.20232577@iit.ac.lk">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student 3-->
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="Shazni.jpg" alt="shazni">
+          </div>
+          <h3>Mohamed Shazni</h3>
+          <p> UoW ID - W2084728 </p>
+          <p> IIT ID - 20232600 </p>
+          <p> Tasks - Created the Our team page, User profile & a Content page </p>
+          <div class="icons">
+            <a href="https://twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:shazni.20232600@iit.ac.lk">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student 4-->
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="Rusitha.jpg" alt="rusitha">
+          </div>
+          <h3>Rusitha Fernando</h3>
+          <p> UoW ID - W2084725 </p>
+          <p> IIT ID - 20232587 </p>
+          <p> Tasks - Created the Gallery page, sitemap & a Content page </p>
+          <div class="icons">
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:rusitha.20232587@iit.ac.lk">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-center">
+      <p class="footer-links">
+        <a href="Userprofile.html"> User Profile </a>
+
+        <a href="My team.html"> My Team </a>
+
+        <a href=""> Content Page </a>
+
+        <a href=""> Page Editor </a>
+      </p>
+
+      <p class="footer"> This page was developed by Mohamed Shazni.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
