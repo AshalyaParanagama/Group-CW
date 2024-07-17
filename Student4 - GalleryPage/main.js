@@ -1,11 +1,16 @@
 
 var text;
 var header;
+var topNav;
 function expandImg(imageSrc, headerId, textId) {
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modalImage");
     var modalText = document.getElementById(textId);
     var modalHeader = document.getElementById(headerId);
+    topNav = document.getElementById('nav');
+
+    topNav.style.display = 'none';
+    
     text = modalText;
     header = modalHeader;
 
@@ -17,6 +22,7 @@ function expandImg(imageSrc, headerId, textId) {
   }
   function closeImg() {
     var modal = document.getElementById("myModal");
+    topNav.style.display = 'flex';
     text.style.display = "none";
     header.style.display = "none";
     modal.style.display = "none";
