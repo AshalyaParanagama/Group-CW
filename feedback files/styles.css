@@ -21,6 +21,7 @@ body {
     max-width: 100%;
     z-index: 0;
     position: absolute;
+    filter: sepia(1) saturate(10) hue-rotate(-0deg);
 }
 
 .container {
