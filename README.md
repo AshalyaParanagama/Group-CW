@@ -16,7 +16,7 @@ This project is brought to you by the following team members:
 
 - **Ashalya Paranagama** - [AshalyaParanagama]([#](https://github.com/AshalyaParanagama))
 - **Ravidu Kaluarachchi** - [GitHub Profile](#)
-- **Mohamed Shazni** - [GitHub Profile](#))
+- **Mohamed Shazni** - [GitHub Profile](#)
 - **Rusitha Fernando** - [GitHub Profile](#)
 
 We are a diverse team of students in University of Westminster(IIT Sri Lanka) committed to enhancing the learning experience in Web Development.
