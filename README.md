@@ -1,10 +1,6 @@
-# Educational Website
+# EduQuest Educational Website
 
 Welcome to our Educational Website repository! This project is created and maintained by a team of four dedicated individuals with the goal of providing high-quality educational content.
-
-## Table of Contents
-
-- [Google Drive Resources](#google-drive-resources)
 
 ## About the Project
 
