@@ -27,17 +27,17 @@
             function handleSubmit(event) {
             event.preventDefault(); // Prevent form submission
 
-            // Get form data
+            // To get form data
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const rating = document.getElementById('rating').value;
             const comments = document.getElementById('comments').value;
 
-            // Display the confirmation message
+            // To display the confirmation message
             document.getElementById('feedback-form').style.display = 'none';
             document.getElementById('confirmation').style.display = 'block';
 
-            // Set the confirmation message content
+            // Setting the confirmation message content
             document.getElementById('confirm-name').textContent = name;
             document.getElementById('confirm-email').textContent = email;
             document.getElementById('confirm-rating').textContent = rating;
@@ -56,10 +56,10 @@
                 <div id="feedback-form">
                     <form class="feedback-form" onsubmit="handleSubmit(event)">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Please enter only letters" placeholder="Please enter your name" required>
     
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
     
                         <label for="rating">Rating</label>
                         <select id="rating" name="rating" required>

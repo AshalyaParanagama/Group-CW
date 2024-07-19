@@ -11,6 +11,8 @@ body{
   background-color: var(--bgColor);
   
 }
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
 @font-face {
   font-family: "dyslexiFont";
   src: url(typeface/ComicSans/LDFComicSans.ttf);
