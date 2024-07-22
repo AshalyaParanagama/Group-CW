@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quality Education</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" contents = "IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <!--To include the navigation bar, please put the code starting from here in the head section-->
+        <link rel="stylesheet" href="index files/styles.css">
+        <link rel="stylesheet" href="feedback files/styles.css">
+        <link id = "navigationBar" rel="import" href="topbar.html">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+        </style>
+        <script> // Navigation bar integration script starts here. Please enter this script in the head section to make it appear on your webpage
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('topbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.topnav').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error fetching the topbar:', error));
+            });
+        //Navigation bar integration script ends here
+        //To include the navigation bar, please put the code from the previous mentioned start point to here in the head section
+
+            function handleSubmit(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const rating = document.getElementById('rating').value;
+            const comments = document.getElementById('comments').value;
+
+            // Display the confirmation message
+            document.getElementById('feedback-form').style.display = 'none';
+            document.getElementById('confirmation').style.display = 'block';
+
+            // Set the confirmation message content
+            document.getElementById('confirm-name').textContent = name;
+            document.getElementById('confirm-email').textContent = email;
+            document.getElementById('confirm-rating').textContent = rating;
+            document.getElementById('confirm-comments').textContent = comments;
+        }
+        </script>
+    </head>
+    <body>
+        <div class ="topbar"> <!--Navigation Bar starts here. Please enter this topbar class in your body to make it appear in your webpage-->
+            <div class="topnav"></div>
+        </div><!--Navigation bar ends here-->
+        <div class = "main">
+            <img src = "feedback files/img/world-map.png">
+            <div class="container">
+                <h2 style ="letter-spacing: 2px; font-weight: lighter;">Feedback Form</h2>
+                <div id="feedback-form">
+                    <form class="feedback-form" onsubmit="handleSubmit(event)">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+    
+                        <label for="rating">Rating</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Select a rating</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="poor">Poor</option>
+                            <option value="awful">Awful</option>
+                        </select>
+    
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" placeholder="Write your comments here.." style="height:150px" required></textarea>
+    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div id="confirmation" style="display:none;">
+                    <h2>Feedback Submitted</h2>
+                    <p>Thank you for your feedback!</p>
+                    <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+                    <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+                    <p><strong>Rating:</strong> <span id="confirm-rating"></span></p>
+                    <p><strong>Comments:</strong> <span id="confirm-comments"></span></p>
+                </div>
+            </div>          
+        </div>
+        <div class = "footer">
+            <div class = "page-editor">
+                <p>This page is created by <a href = "student2-page-editor.html">Buwaneka Ravindhu Kaluarachchi</a></p>
+            </div>
+        </div>
+    </body>
+</html>

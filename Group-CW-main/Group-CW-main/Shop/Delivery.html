@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2f2d2c;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .container input[type="text"], .container input[type="email"], .container input[type="tel"], .container textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #d32f2f;
+        }
+        .loader-container {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #007bff;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        footer a { 
+            color: #f8f8f8;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: none;
+            color:#aa9898;
+        }
+        footer a:active{
+            color:#ad8888
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #d32f2f;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            height: 5%;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delivery To The Door Step</h1>
+        <form id="codForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button type="button" class="submit-btn" onclick="submitForm()">Place Order</button>
+        </form>
+    </div>
+
+    <div class="loader-container" id="loaderContainer">
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('codForm');
+            if (form.checkValidity()) {
+                document.getElementById('loaderContainer').style.display = 'flex';
+                setTimeout(function(){
+                    window.location.href = "Thank_payment.html";
+                }, 4000);
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        }
+    </script>
+    <footer> 
+        <div class="footer" id="bottom">
+            <h4><a href="/Page%20Editor/PageEditor.html"> Page Editor </a></h4>
+        </div>
+    </footer>
+</body>
+</html>

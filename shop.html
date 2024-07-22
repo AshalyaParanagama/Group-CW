@@ -17,6 +17,16 @@
                 })
                 .catch(error => console.error('Error fetching the topbar:', error));
             });
+            const sharp = require('sharp');
+
+            sharp('index%20files/img/background.jpeg')
+                .toFile('index%20files/img/background.webp', (err, info) => {
+                    if (err) {
+                        console.error(err);
+                    } else {
+                        console.log(info);
+                    }
+            });
     </script>
 </head>
 <body>
@@ -26,7 +36,7 @@
     </div>
 
     <div class="main1"> 
-        <img src="index%20files/img/background.png" style="height:30%; width:100%;" alt="background-image">
+        <img src="index%20files/img/background.jpeg" style="height:30%; width:100%;" alt="background-image">
     <div class="notice">
             <p><a href="Content%20Page/content.html">Check out our content page</a> to seek more information on books.</p>
     </div>
@@ -84,8 +94,8 @@
 
                 <div class="grid-item">
                     <img src="Shop/Book5.jpg" alt="Elon Musk">
-                    <h2>Elon Musk</h2>
-                    <i>by Ashlee Vance</i>
+                    <h2>The 48 Laws of Power</h2>
+                    <i>by Robert Greene</i>
                     <p>$20.45</p>
                     <div class="quantity">
                         Quantity:

@@ -24,7 +24,7 @@ function updateBasket() {
         itemElement.className = 'basket-item';
         itemElement.innerHTML = `
             <p>${item.name} - $${item.price} x ${item.quantity}</p>
-            <button onclick="removeItem('${item.name}')">Remove</button>
+            <button onclick="removeItem('${item.name}')", class="removing">Remove</button>
         `;
         basketItemsContainer.appendChild(itemElement);
     });

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+.main img {
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.container {
+    margin-top: 46px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    max-height: calc(100% - 86px);
+    z-index: 1;
+    position: relative;
+    font-family: "Anton SC", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.feedback-form input[type="text"], .feedback-form input[type="email"], .feedback-form select, .feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-family: "Anton SC", sans-serif;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#confirmation {
+
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+strong{
+
+    font-weight: lighter;
+}
+
+footer a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #aa9898;
+}
+
+footer a:active {
+    color: #ad8888;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    position: relative;
+    max-height: 15%;
+    max-width: 100%;
+    z-index: 2;
+}

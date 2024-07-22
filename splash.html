@@ -25,6 +25,17 @@
         setTimeout(function(){   //Timer of 4 seconds for the loader 4000 is in milliseconds
             window.location.href = "home.html";
         }, 4000);
+
+        const sharp = require('sharp');
+
+        sharp('SplashScreen.jpg')
+            .toFile('SplashScreen.webp', (err, info) => {
+                if (err) {
+                    console.error(err);
+                } else {
+                    console.log(info);
+                }
+            });
     </script>
 </body>
 </html>
