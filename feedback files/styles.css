@@ -91,28 +91,3 @@ strong{
 
     font-weight: lighter;
 }
-
-footer a {
-    color: #f8f8f8;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: none;
-    color: #aa9898;
-}
-
-footer a:active {
-    color: #ad8888;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #d32f2f;
-    color: #fff;
-    position: relative;
-    max-height: 15%;
-    max-width: 100%;
-    z-index: 2;
-}
