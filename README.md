@@ -10,7 +10,7 @@ This educational website is designed to offer a wide range of learning materials
 
 This project is brought to you by the following team members:
 
-- **Ashalya Paranagama** - [[AshalyaParanagama](https://github.com/AshalyaParanagama)]
+- **Ashalya Paranagama** - [AshalyaParanagama](https://github.com/AshalyaParanagama)
 - **Ravindhu Kaluarachchi** - [Ravindhu Kaluarachchi](https://github.com/Buwaneka2)
 - **Mohamed Shazni** - [MohamedShazni](https://github.com/MohamedShazni/Shazni)
 - **Rusitha Fernando** - [Rusithafdo](https://github.com/Rusithafdo)

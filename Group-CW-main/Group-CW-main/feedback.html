@@ -18,6 +18,26 @@
                     .then(response => response.text())
                     .then(data => {
                         document.querySelector('.topnav').innerHTML = data;
+
+                        // Determine the current page URL
+                        const currentPage = window.location.pathname;
+
+                        // Add 'active' class to the corresponding link
+                        if (currentPage.includes("home.html")) {
+                            document.getElementById('home-link').classList.add('active');
+                        } else if (currentPage.includes("sitemap.html")) {
+                            document.getElementById('sitemap-link').classList.add('active');
+                        } else if (currentPage.includes("index.html")) {
+                            document.getElementById('gallery-link').classList.add('active');
+                        } else if (currentPage.includes("shop.html")) {
+                            document.getElementById('shop-link').classList.add('active');
+                        } else if (currentPage.includes("My%20team.html")) {
+                            document.getElementById('about-link').classList.add('active');
+                        } else if (currentPage.includes("Userprofile.html")) {
+                            document.getElementById('user-link').classList.add('active');
+                        } else if (currentPage.includes("feedback.html")) {
+                            document.getElementById('feedback-link').classList.add('active');
+                        }
                     })
                     .catch(error => console.error('Error fetching the topbar:', error));
             });
